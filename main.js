@@ -30,8 +30,9 @@ class Ferrari  extends Car{
   super('Ferrari' , 180);
 }
 drive() {
-  return "Vroom. I'm a Ferrari!"
+  return super.drive() + "I'm a Ferrari!"
 }
+
 accelerate() {
   if (this.speed < this.maxSpeed) {
     this.speed = this.speed + (this.maxSpeed/2);
